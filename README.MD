@@ -1,0 +1,2 @@
+# ROOTS
+Roots is an African Centered App. Africa has a rich history but very little is know about it. Roots seeks to recreate this by utilizing stories crowd sourced to complete a larger that is the collective African history.
