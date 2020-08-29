@@ -1,32 +1,74 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Roots</title>
     <style type="text/css">
-        #map{
+    @font-face {
+    font-family: "myFirstFont";
+    src: url("G:/SDG/Team-904-FrontEnd/assets/fonts/BeautifulPeople.ttf");
+}
+        #map {
             width: 100vw;
             height: 100vh;
         }
+        .container{
+            width: 100vw;
+            height: 100vh;
+        }
+        body{
+            font-family: 'assets/fonts/BeautifulPeople.ttf';
+        }
     </style>
+    <!-- Bootstrap CSS -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
 </head>
-<body>
-    <div id="map"></div>
+
+<body style="padding: o; margin: 0;">
+    <div id="map">
+    </div>
+    <div class="container-fluid" style="position: absolute; top: 0px; left: 0;height: 100vh; width: 100vw;padding: 0;">
+        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 splashscreen" style="height: 100vh;width: 100wh;background-image: url('assets/images/african_sunset.jpg'); background-size: cover;padding: 0;">
+            <div class="row" style="margin: auto;">
+            <div class="col-lg-4 col-md-4 col-sm-4"></div>
+            <div class="col-lg-4" style="margin: auto;">
+                <h1 style="margin-top: 10%;"></h1>
+                <img src="assets/images/roots icon.png" alt="roots africa logo" class="img-responsive">
+                <div class="row" style="margin-top: 5%;">
+                    <div class="col-lg-4"></div>
+                    <div class="col-lg-4">
+                        <button class="btn btn-primary">Proceed</button>
+                    </div>
+                    <div class="col-lg-4"></div>
+                </div>
+            </div>
+            <div class="col-lg-4"></div>
+            </div>
+        </div>
+    </div>
     <script>
         // Initialize and add the map
         function initMap() {
-          // The location of Uluru
-          var uluru = {lat: -25.344, lng: 131.036};
-          // The map, centered at Uluru
-          var map = new google.maps.Map(
-              document.getElementById('map'), {zoom: 4, center: uluru});
-          // The marker, positioned at Uluru
-          var marker = new google.maps.Marker({position: uluru, map: map});
+            // The location of Uluru
+            var uluru = { lat: -0.310945, lng: 23.468946 }; 
+            // The map, centered at Uluru
+            var map = new google.maps.Map(
+                document.getElementById('map'), { zoom: 4, center: uluru });
+            // The marker, positioned at Uluru
+            var marker = new google.maps.Marker({ position: uluru, map: map });
         }
-            </script>
-            <script defer
-            src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCBKEKRPcRpor_Z7wkDbS3RwNw1p86qQzA&callback=initMap">
-            </script>
+    </script>
+    <script defer
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCBKEKRPcRpor_Z7wkDbS3RwNw1p86qQzA&callback=initMap">
+    </script>
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
 </body>
+
 </html>
